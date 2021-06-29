@@ -23,7 +23,7 @@ export default function ImageView({ $app, initialState, onClick }) {
         e.target.src ? null : this.onClick()
     })
     window.addEventListener('keyup', (e) => {
-        if (e.key == 'Escape')
+        if (e.key == 'Escape' && this.state)
             this.onClick()
     })
 
