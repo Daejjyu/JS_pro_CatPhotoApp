@@ -22,7 +22,13 @@ export default function App($app) {
 
     const imageView = new ImageView({
         $app,
-        initialState: this.state.selectedFilePath
+        initialState: this.state.selectedFilePath,
+        onClick: () => {
+            this.setState({
+                ...this.state,
+                selectedFilePath: null,
+            })
+        }
     })
 
     const breadcrumb = new Breadcrumb({

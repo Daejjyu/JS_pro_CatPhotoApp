@@ -72,13 +72,3 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-.ExitBtn {
-  position: fixed;
-  left: 73%;
-  top: 2%;
-  width: 3%;
-  height: 3%;
-  background-color: #EEEEEE;
-  z-index: 2;
-}
